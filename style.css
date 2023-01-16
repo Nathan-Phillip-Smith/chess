@@ -1,0 +1,82 @@
+:root {
+    --color-1: #a6c5d6;
+    --color-2: #245b71;
+    --color-b: #414141;
+    --color-w: #dcdcdc;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-color: var(--color-b);
+}
+
+#header {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-2);
+    margin-bottom: 60px;
+}
+
+#title {
+    padding-left: 80px;
+    font-size: 50px;
+    color: var(--color-1);
+}
+
+/* ChessBoard */
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.squaren, .squareb, .squarew, .squarel {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.squarel, .squaren {
+    color: var(--color-w);
+    font-size: 40px;
+}
+
+.squarew {
+    background-color: var(--color-1);
+    font-size: 80px;
+}
+
+.squareb {
+    background-color: var(--color-2);
+    font-size: 80px;
+}
+
+#white-peice {
+    color: var(--color-w);
+    text-shadow: 3px 3px 7px var(--color-b);
+}
+
+#black-peice {
+    color: var(--color-b);
+    text-shadow: 2px 2px 5px var(--color-w);
+}
+
+#c4, #c3, .highlight{
+    box-shadow: 0px 0px 10px 5px var(--color-w) inset;
+}
